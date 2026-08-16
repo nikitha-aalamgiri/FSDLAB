@@ -28,7 +28,7 @@ const quiz = [
 
 let index = 0;
 let score = 0;
-let time = 30;
+let time = 250;
 
 const question = document.getElementById("question");
 const options = document.getElementById("options");
