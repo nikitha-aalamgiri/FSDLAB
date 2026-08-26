@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5f0;
+  color: #333;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background-color: #5b3a29;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #f3d5a5;
+}
+
+/* Home */
+
+.home-page {
+  text-align: center;
+}
+
+.hero {
+  padding: 100px 20px;
+  background-color: #ead8c0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #5b3a29;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3e271c;
+}
+
+/* Features */
+
+.featured {
+  padding: 50px 30px;
+}
+
+.featured h2 {
+  font-size: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.features div {
+  width: 250px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* About & Contact */
+
+.page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 40px;
+  color: #5b3a29;
+}
+
+.page h2 {
+  margin-top: 40px;
+}
+
+.page p {
+  line-height: 1.7;
+}
+
+.contact-info {
+  margin: 30px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: inherit;
+}
