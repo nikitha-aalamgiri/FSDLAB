@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eee7ff;
+  color: #51456b;
+}
+
+/* Main ToDo box */
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > div {
+  width: 620px;
+  padding: 55px 40px;
+  background: #faf8ff;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(120, 95, 170, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #8767c5;
+  font-size: 34px;
+}
+
+/* Input */
+input {
+  width: 68%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #cdbbea;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+  color: #51456b;
+  background: white;
+}
+
+input:focus {
+  border-color: #9b7ed0;
+  box-shadow: 0 0 8px rgba(155, 126, 208, 0.2);
+}
+
+/* Buttons */
+button {
+  padding: 14px 20px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 14px;
+  background: #a88bd4;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #8f70c5;
+  transform: scale(1.04);
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 35px;
+}
+
+/* Individual task */
+li {
+  background: #ffffff;
+  border: 1px solid #dfd3f2;
+  margin: 16px 0;
+  padding: 15px 18px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 17px;
+  text-align: left;
+}
+
+/* Delete button */
+li button {
+  background: #c5a9e6;
+  padding: 9px 15px;
+  font-size: 13px;
+}
+
+li button:hover {
+  background: #a88bd4;
+}
