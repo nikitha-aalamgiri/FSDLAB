@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "30px" }}>
-      <h2>React ToDo App</h2>
+      <h2>STUDENT TODO LIST</h2>
 
       <input
         type="text"
