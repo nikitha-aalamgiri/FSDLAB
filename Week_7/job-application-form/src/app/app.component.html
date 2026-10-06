@@ -1,0 +1,81 @@
+<h2>Job Application Form</h2>
+
+<form [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+
+  <label>First Name</label><br>
+  <input type="text" formControlName="firstName">
+
+  <div *ngIf="jobForm.controls.firstName.invalid && jobForm.controls.firstName.touched">
+    First Name is required.
+  </div>
+
+  <br><br>
+
+  <label>Last Name</label><br>
+  <input type="text" formControlName="lastName">
+
+  <div *ngIf="jobForm.controls.lastName.invalid && jobForm.controls.lastName.touched">
+    Last Name is required.
+  </div>
+
+  <br><br>
+
+  <label>Mobile Number</label><br>
+  <input type="text" formControlName="mobile">
+
+  <div *ngIf="jobForm.controls.mobile.invalid && jobForm.controls.mobile.touched">
+    Enter a valid 10-digit mobile number.
+  </div>
+
+  <br><br>
+
+  <label>Email ID</label><br>
+  <input type="email" formControlName="email">
+
+  <div *ngIf="jobForm.controls.email.invalid && jobForm.controls.email.touched">
+    Enter a valid email address.
+  </div>
+
+  <br><br>
+
+  <label>Qualification</label><br>
+  <input type="text" formControlName="qualification">
+
+  <div *ngIf="jobForm.controls.qualification.invalid && jobForm.controls.qualification.touched">
+    Qualification is required.
+  </div>
+
+  <br><br>
+
+  <label>Skills</label><br>
+  <input type="text" formControlName="skills">
+
+  <div *ngIf="jobForm.controls.skills.invalid && jobForm.controls.skills.touched">
+    Skills are required.
+  </div>
+
+  <br><br>
+
+  <label>Experience</label><br>
+  <input type="text" formControlName="experience">
+
+  <div *ngIf="jobForm.controls.experience.invalid && jobForm.controls.experience.touched">
+    Experience is required.
+  </div>
+
+  <br><br>
+
+  <label>Address</label><br>
+  <textarea rows="4" formControlName="address"></textarea>
+
+  <div *ngIf="jobForm.controls.address.invalid && jobForm.controls.address.touched">
+    Address is required.
+  </div>
+
+  <br><br>
+
+  <button type="submit" [disabled]="jobForm.invalid">
+    Submit Application
+  </button>
+
+</form>
